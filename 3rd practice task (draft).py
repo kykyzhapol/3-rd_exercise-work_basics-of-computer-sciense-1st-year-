@@ -64,3 +64,17 @@ else:
 #10th
 num = list(map(int, input().split()))
 print(int((num[0]/num[1]-num[0]//num[1])+(num[1]/num[0]-num[1]//num[0])+1))
+
+#11th
+clock = float(input())
+print(int(clock//30), int((clock/30-clock//30)*60))
+
+#12th
+import time
+print(time.ctime())
+
+#13th
+strb = int(input())
+colb = int(input())
+numb = int(input())
+print(f'страница {numb//(strb*colb)+1} столбец {(numb%(strb*colb))//strb+1} строка {(numb-(strb*colb))%strb}')
